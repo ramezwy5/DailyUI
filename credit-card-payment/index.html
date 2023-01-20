@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credit Payment form</title>
+    <script src="https://kit.fontawesome.com/f8b0557b87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">    
+        <header>
+            <h1>payment</h1>
+            <p>insert your payment methods</p>
+        </header>
+        <main>
+            <!-- payment types -->
+            <section class="payment-methods">
+                <h2 class="types">type of payment</h2>
+                <div class="btn-group" role="toolbar" aria-label="method">
+                    <a href="#" class="btn btn-secondary"><i class="fa fa-apple fa-2x fa-fw"></i></a>
+                    <a href="#" class="btn btn-danger"><i class="fa fa-google fa-2x fa-fw"></i></a>
+                    <a href="#" class="btn btn-warning"><i class="fa fa-paypal fa-2x fa-fw"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="fa fa-credit-card fa-2x fa-fw"></i></a>
+                </div>
+            </section>
+
+            <!-- payment informations -->
+            <section class="card-information">
+                <form class="row my-3 gap-2">
+                    <div class="col col-12 col-md-4 name mb-3">
+                        <label for="cardHolder" class="form-label">Name on card</label>
+                        <input type="text" class="form-control" id="cardHolder" placeholder="your name">
+                    </div>
+                    <div class="col col-12 col-md-4 number mb-3">
+                        <label for="cardNumber" class="form-label">card number</label>
+                        <input type="tel" class="form-control" id="cardNumber" inputmode="numeric" autocomplete="cc-number" pattern="/^\d+$/{13,19}" maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+                    <div class="col col-12 col-md-4 expire mb-3">
+                        <label for="expiration" class="form-label">expiration date</label>
+                        <input type="month" class="form-control" id="expiration" min="2023-12" max="2030-12" value="2023-01">
+                    </div>
+                    <div class="col col-12 col-md-4 security mb-3">
+                        <label for="cvv" class="form-label">CVV</label>
+                        <input type="tel" class="form-control" id="cvv" inputmode="numeric" placeholder="CVV" maxlength="3">
+                    </div>
+                </form>
+            </section>
+
+
+            <!-- payment submit or cancelation -->
+            <section class="submit text-center">
+                <div class="row gap-3">
+                    <button class="btn btn-danger col col-md-3">Cancel</button>
+                    <button class="btn btn-success col col-md-3">Submit</button>
+                </div>
+            </section>
+
+
+        </main>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
