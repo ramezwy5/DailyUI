@@ -27,8 +27,10 @@ body {
   padding: 1rem;
 }
 #buttons button {
-  aspect-ratio: 1;
   border: none;
   background: transparent;
-  text-shadow: 0.25rem 0.25rem 20px #242424, 12px 12px 20px #f0ae37;
+  box-shadow: 6px 6px 15px #242424, 12px 12px 20px #f0ae37;
+}
+#buttons i {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

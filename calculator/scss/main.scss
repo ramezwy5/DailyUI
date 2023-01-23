@@ -24,9 +24,12 @@ body{
     background-color: #f5f5f0;
     padding: 1rem;
     button{
-        aspect-ratio: 1;
+        // aspect-ratio: 1;
         border: none;
         background: transparent;
-        text-shadow: .25rem .25rem 20px #242424, 12px 12px 20px #f0ae37;
+        box-shadow: 6px 6px 15px #242424, 12px 12px 20px #f0ae37;
+    }
+    i{
+        width: 100%;
     }
 }

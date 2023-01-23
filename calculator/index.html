@@ -19,34 +19,34 @@
         <!-- buttons -->
         <div class="container-fluid mt-2" id="buttons">
             <div class="row mb-3" id="row-st">
-                <button class="col col-3" id="cancel">AC</button>
-                <button class="col col-3 fa fa-delete-left fa-fw" id="del"></button>
-                <button class="col col-3 fa fa-percent fa-fw" id="percent"></button>
-                <button class="col col-3 fa fa-divide fa-fw" id="divide"></button>
+                <button class="col col-3 function" data-function="cancel" id="cancel">AC</button>
+                <button class="col col-3 fa fa-delete-left fa-fw function" data-function="cancel" id="del"></button>
+                <button class="col col-3 fa fa-percent fa-fw function" data-function="cancel" id="percent"></button>
+                <button class="col col-3 fa fa-divide fa-fw function" data-function="cancel" id="divide"></button>
             </div>
             <div class="row mb-3" id="row-nd">
-                <button class="col col-3" id="seven">7</button>
-                <button class="col col-3" id="eight">8</button>
-                <button class="col col-3" id="nine">9</button>
-                <button class="col col-3 fa fa-xmark fa-fw" id="multi"></button>
+                <button class="col col-3 number" data-number="7" id="seven">7</button>
+                <button class="col col-3 number" data-number="7" id="eight">8</button>
+                <button class="col col-3 number" data-number="7" id="nine">9</button>
+                <button class="col col-3 fa fa-xmark fa-fw function" data-function="cancel" id="multi"></button>
             </div>
             <div class="row mb-3" id="row-rd">
-                <button class="col col-3" id="four">4</button>
-                <button class="col col-3" id="five">5</button>
-                <button class="col col-3" id="six">6</button>
-                <button class="col col-3 fa fa-minus fa-fw" id="sub"></button>
+                <button class="col col-3 number" data-number="7" id="four">4</button>
+                <button class="col col-3 number" data-number="7" id="five">5</button>
+                <button class="col col-3 number" data-number="7" id="six">6</button>
+                <button class="col col-3 fa fa-minus fa-fw function" data-function="cancel" id="sub"></button>
             </div>
             <div class="row mb-3" id="row-fourth">
-                <button class="col col-3" id="one">1</button>
-                <button class="col col-3" id="two">2</button>
-                <button class="col col-3" id="three">3</button>
-                <button class="col col-3 fa fa-plus fa-fw" id="add"></button>
+                <button class="col col-3 number" data-number="7" id="one">1</button>
+                <button class="col col-3 number" data-number="7" id="two">2</button>
+                <button class="col col-3 number" data-number="7" id="three">3</button>
+                <button class="col col-3 fa fa-plus fa-fw function" id="add"></button>
             </div>
             <div class="row row-cols-4 mb-3" id="row-fifth">
                 <button class="col col-3" id="negative">-/+</button>
-                <button class="col col-3" id="zero">0</button>
-                <button class="col col-3" id="deci">.</button>
-                <button class="col col-3 fa fa-equals fa-fw" id="equals"></button>
+                <button class="col col-3 number" data-number="7" id="zero">0</button>
+                <button class="col col-3 number" id="deci">.</button>
+                <button class="col col-3 fa fa-equals fa-fw function" id="equals"></button>
             </div>
         </div>
         
@@ -57,7 +57,7 @@
 
 
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
