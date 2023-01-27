@@ -2,16 +2,18 @@ const buttons = $("button");
 const numbers = $(".number");
 const display = $("#display");
 const functions = $(".function");
-let num1 = 5;
-let num2 = 9;
+let num1 = "0";
+let num2 = "0";
 
     
 $(buttons).click( e => {
     
-    let key = $(e.target);
+    const key = $(e.target);
     const keyValue = key.html();
     let displayValue = display.html();
 
+
+    key.setTimeOut(() => key.toggleClass("clicked"), 800);
 
     if(key.attr("data-number")){
 
@@ -25,28 +27,48 @@ $(buttons).click( e => {
         })
         
     }else if(key.attr("data-function")){
-        fnc = key.id;
-        operation(fnc);
-
-     }
+    
+        let fn = key.attr("id");
+        const taskKey = key.attr("data-function");
+        if(taskKey === "task"){
+            task(fn);
+        
+        }
+        if(taskKey === "calc"){
+            display.html('');
+            num2 = keyValue;
+            display.html(displayValue + num2);
+            
+        }
+        if(taskKey === "equals"){
+            calculat(fn);
+        }
+    }
+     
     
 })
 
-
-
-function operation(fnc){
-    num1 = parseInt(num1);
-    num2 = parseInt(num2);
-    let total;
+function task(fnc){
     switch(fnc){
         case "cancel":
             num1 = 0;
             num2 = 0;
-            display.html(num1)
+            display.html('0')
             break;
         case "del":
-            display.html(num1.toString().slice(0, -1));
+            display.html(display.html() - num1);
             break;
+    }
+}
+
+
+
+function calculat(fnc){
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    let total;
+    switch(fnc){
+    
         case "percent":
             total = num1 * (num2 /100);
             display.html(total);
