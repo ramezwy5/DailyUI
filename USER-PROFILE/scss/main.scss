@@ -1,0 +1,44 @@
+@forward 'globals';
+.container{
+    margin-top: 25vh;
+    border-radius: 15px;
+}
+
+
+.images{
+    padding-top: 1rem;
+    .back-ground{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .user{
+        position: absolute;
+        top: 4rem;
+        left: 50%;
+        margin-left: -35px;
+        width: 70px;
+        outline: 7px solid #c1c1c1;
+    }
+}
+
+.button{
+    margin-bottom: 2rem;
+    .btn{
+        width: 45%;
+    }
+}
+
+.statistics{
+    margin-inline: auto;
+    .col{
+        display: flex;
+        flex-direction: column;
+        strong{
+            margin-bottom: 1rem;
+        }
+        em{
+            font-size: 1.2rem;
+            font-weight: 100;
+        }
+    }
+}
